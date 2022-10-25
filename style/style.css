@@ -217,6 +217,139 @@ a {
   align-items: center;
 }
 
+.contact_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact_pic {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background-color: #292E36;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_pic_link {
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+.contact_pic_link:hover {
+  color: #E1B168;
+}
+
+.contact_pic_link::before {
+  background-color: currentColor;
+  content: "";
+  display: block;
+  width: 52px;
+  height: 52px;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+
+.contact_pic_link_loc::before {
+  -webkit-mask-image: url(../pictures/contact_local.svg);
+          mask-image: url(../pictures/contact_local.svg);
+}
+
+.contact_pic_link_hour::before {
+  -webkit-mask-image: url(../pictures/contact_hour.svg);
+          mask-image: url(../pictures/contact_hour.svg);
+  width: 49px;
+  height: 49px;
+}
+
+.contact_pic_link_res::before {
+  -webkit-mask-image: url(../pictures/contact_reserv.svg);
+          mask-image: url(../pictures/contact_reserv.svg);
+  width: 39px;
+  height: 39px;
+}
+
+.contact_cap {
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #292E36;
+}
+
+.contact_text {
+  color: #292E36;
+}
+
+.history {
+  background-color: #FFF8F5;
+}
+
+.history_container {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.history_pic {
+  width: 743px;
+  height: 519px;
+}
+
+.history_dis {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.history_cap {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #292E36;
+  margin-bottom: 15px;
+}
+
+.history_text {
+  margin-bottom: 25px;
+}
+
+.history_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.history_item {
+  width: 50%;
+}
+
+.history_item_year {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #292E36;
+  margin-bottom: 15px;
+}
+
+.history_sign_name {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.history_sign_pic {
+  width: 198px;
+  height: 107px;
+}
+
 @font-face {
   font-family: "Josefin Sans";
   src: url(../fonts/JosefinSans-Regular.ttf);
