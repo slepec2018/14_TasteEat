@@ -1,5 +1,209 @@
 @import "blocks/library.scss";
 
-h1 {
-    background-color: aqua ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: $family_josefin;
+    font-size: $main_size_20;
+    line-height: $main_height_30;
+    font-weight: $main_weight_400;
+    color: $main_color_text_gray;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    width: 1360px;
+}
+
+.header_top {
+    background-color: $main_color_back_black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header_top_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_top_call {
+    padding: 20px 57px;
+    background-color: transparent;
+    border: 1px solid $main_color_gold;
+    font-size: $main_size_22;
+    line-height: $main_height_33;
+    color: $main_color_text_white;
+    transition: color 0.3s, background-color 0.3s;
+}
+.header_top_call:hover {
+    background-color: $main_color_gold;
+    color: $main_color_text_gray;
+}
+.header_top_reserv {
+    width: 295px;
+    height: 73px;
+    background-color: $main_color_gold;
+    border: 1px solid $main_color_gold;
+    font-size: $main_size_22;
+    line-height: $main_height_33;
+    color: $main_color_text_gray;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.header_top_reserv:hover {
+    background-color: transparent;
+    color: $main_color_text_white;
+}
+
+.header {
+    background-color: $main_color_back_black;
+    border-top: 1px solid $main_color_gray;
+    border-bottom: 2px dashed $main_color_gray;
+    padding-top: 25px;
+    padding-bottom: 28px;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.header_nav_item {
+    display: inline-block;
+}
+.header_nav_item {
+    margin-right: 60px;
+}
+.header_nav_item:last-child {
+    margin-right: 0;
+}
+.header_nav_link {
+    color: $main_color_text_white;
+    transition: color 0.3s;
+}
+.header_nav_link:hover {
+    color: $main_color_gold;
+}
+.header_socials_item {
+    display: inline-block;
+    margin-left: 20px;
+}
+.header_socials_item:first-child {
+    margin-left: 0;
+}
+.header_social_link {
+    color: $main_color_text_white;
+    transition: color 0.3s;
+}
+.header_social_link:hover {
+    color: $main_color_gold;
+}
+.header_social_link::before {
+    background-color: currentColor;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 23px;
+    mask-size: 100%;
+}
+.header_social_link_inst::before {
+    mask-image: url(../pictures/header_nav_inst.svg);
+    width: 24px;
+    height: 23px;
+}
+.header_social_link_face::before {
+    mask-image: url(../pictures/header_nav_face.svg);
+}
+.header_social_link_twit::before {
+    mask-image: url(../pictures/header_nav_twit.svg);
+    width: 26px;
+    height: 21px;
+}
+.header_social_link_pint::before {
+    mask-image: url(../pictures/header_nav_pint.svg);
+    width: 25px;
+    height: 24px;
+}
+
+.welcome {
+    background-color: $main_color_back_black;
+}
+.welcome_container {
+    background: url(../pictures/offer_back.png) no-repeat top right;
+    min-height: 770px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.welcome_cap {
+    margin-bottom: 26px;
+    color: $main_color_text_white;
+    font-family: $family_cormorant;
+    font-size: $main_size_100;
+    line-height: $main_height_110;
+    font-weight: $main_weight_400;
+    width: 470px;
+}
+.welcome_text {
+    color: $main_color_text_white;
+    width: 616px;
+    margin-bottom: 35px;
+}
+.welcome_button {
+    width: 230px;
+    height: 73px;
+    background-color: transparent;
+    border: 1px solid $main_color_gold;
+    font-size: $main_size_22;
+    line-height: $main_height_33;
+    color: $main_color_gold;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.welcome_button:hover {
+    background-color: $main_color_gold;
+    color: $main_color_text_gray;
+}
+
+.contact {
+    background-color: $main_color_back_brown;
+}
+.contact_container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(../fonts/JosefinSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Cormorant";
+    src: url(../fonts/CormorantInfant-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Cormorant Bold";
+    src: url(../fonts/CormorantInfant-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
 }

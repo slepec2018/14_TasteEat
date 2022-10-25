@@ -1,3 +1,237 @@
-h1 {
-  background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #555555;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1360px;
+}
+
+.header_top {
+  background-color: #292E36;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header_top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_top_call {
+  padding: 20px 57px;
+  background-color: transparent;
+  border: 1px solid #E1B168;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header_top_call:hover {
+  background-color: #E1B168;
+  color: #555555;
+}
+
+.header_top_reserv {
+  width: 295px;
+  height: 73px;
+  background-color: #E1B168;
+  border: 1px solid #E1B168;
+  font-size: 22px;
+  line-height: 33px;
+  color: #555555;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header_top_reserv:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.header {
+  background-color: #292E36;
+  border-top: 1px solid #5C6168;
+  border-bottom: 2px dashed #5C6168;
+  padding-top: 25px;
+  padding-bottom: 28px;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_nav_item {
+  display: inline-block;
+}
+
+.header_nav_item {
+  margin-right: 60px;
+}
+
+.header_nav_item:last-child {
+  margin-right: 0;
+}
+
+.header_nav_link {
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+.header_nav_link:hover {
+  color: #E1B168;
+}
+
+.header_socials_item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header_socials_item:first-child {
+  margin-left: 0;
+}
+
+.header_social_link {
+  color: #FFFFFF;
+  transition: color 0.3s;
+}
+
+.header_social_link:hover {
+  color: #E1B168;
+}
+
+.header_social_link::before {
+  background-color: currentColor;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 23px;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+
+.header_social_link_inst::before {
+  -webkit-mask-image: url(../pictures/header_nav_inst.svg);
+          mask-image: url(../pictures/header_nav_inst.svg);
+  width: 24px;
+  height: 23px;
+}
+
+.header_social_link_face::before {
+  -webkit-mask-image: url(../pictures/header_nav_face.svg);
+          mask-image: url(../pictures/header_nav_face.svg);
+}
+
+.header_social_link_twit::before {
+  -webkit-mask-image: url(../pictures/header_nav_twit.svg);
+          mask-image: url(../pictures/header_nav_twit.svg);
+  width: 26px;
+  height: 21px;
+}
+
+.header_social_link_pint::before {
+  -webkit-mask-image: url(../pictures/header_nav_pint.svg);
+          mask-image: url(../pictures/header_nav_pint.svg);
+  width: 25px;
+  height: 24px;
+}
+
+.welcome {
+  background-color: #292E36;
+}
+
+.welcome_container {
+  background: url(../pictures/offer_back.png) no-repeat top right;
+  min-height: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.welcome_cap {
+  margin-bottom: 26px;
+  color: #FFFFFF;
+  font-family: "Cormorant", serif;
+  font-size: 100px;
+  line-height: 110px;
+  font-weight: 400;
+  width: 470px;
+}
+
+.welcome_text {
+  color: #FFFFFF;
+  width: 616px;
+  margin-bottom: 35px;
+}
+
+.welcome_button {
+  width: 230px;
+  height: 73px;
+  background-color: transparent;
+  border: 1px solid #E1B168;
+  font-size: 22px;
+  line-height: 33px;
+  color: #E1B168;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.welcome_button:hover {
+  background-color: #E1B168;
+  color: #555555;
+}
+
+.contact {
+  background-color: #FFF8F5;
+}
+
+.contact_container {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(../fonts/JosefinSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: url(../fonts/CormorantInfant-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cormorant Bold";
+  src: url(../fonts/CormorantInfant-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
